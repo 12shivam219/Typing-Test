@@ -15,6 +15,7 @@ export default function Test() {
     if (paragraph[rand].paragraph == input) {
 
     }
+
     return (
         <>
             <div className="heading w-full block">
@@ -23,13 +24,20 @@ export default function Test() {
                 </div>
             </div>
 
-            <Error_Time_Accuracy/>
+            <Error_Time_Accuracy />
 
-            {/* <div>{paragraph[rand].paragraph}</div>
-            <div>
-                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} className='bg-black text-white' />
-                <button onClick={() => setRand(randomParagraph)}>Click</button>
-            </div> */}
+            <div className="fixPara w-full block">
+                <div className="paraGraph max-w-[50%] shadow-2xl p-4 mt-3 mx-auto text-justify font-mono text-base font-bold">
+                    <p>{paragraph[rand].paragraph}</p>
+                </div>
+            </div>
+
+            <div className='inputParagraph'>
+                <div className='input  max-w-[40%] p-4 mt-3 mx-auto'>
+                    <textarea name="" value={input} id="" cols="30" rows="10" onChange={(e) => setInput(e.target.value)} className='w-full h-[200px] rounded-xl p-2 shadow-2xl'></textarea>
+                </div>
+            </div>
+            {/* <button onClick={() => setRand(randomParagraph)}>Click</button> */}
         </>
     )
 }
