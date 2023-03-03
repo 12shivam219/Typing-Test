@@ -15,9 +15,9 @@ Generates a random paragraph for each test.
 Calculates accuracy and WPM.
 Easy to use and beginner-friendly.
 
-## Technologies used
+# Technologies used
 
- Tailwind Css
- React.js
+ ## Tailwind Css
+ ## React.js
 
 https://typingtestt.netlify.app
