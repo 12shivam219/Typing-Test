@@ -17,5 +17,7 @@ Easy to use and beginner-friendly.
 
 ## Technologies used
 
-# Tailwind Css
-# React.js
+ Tailwind Css
+ React.js
+
+https://typingtestt.netlify.app
