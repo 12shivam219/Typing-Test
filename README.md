@@ -1,70 +1,11 @@
-# Getting Started with Create React App
+# Typing Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This code is a React component that displays a typing test. The user types a paragraph and the component calculates the number of errors, accuracy, and words per minute (WPM) of the user's typing. The paragraph text is stored in a separate JSON file and a random paragraph is selected each time the user starts a new test. The component uses the useState hook to manage state variables for various aspects of the test, such as the user input, the timer, and the results.
 
-## Available Scripts
+## The component consists of several parts. The Test function is the main function that renders the component. It contains several state variables, including rand (which stores the index of the current random paragraph), input (which stores the user's input), testarea (a boolean that controls whether the input textarea is disabled or not), showBtn (a boolean that controls whether the Start or Restart button is displayed), showStart (a boolean that controls whether the Start button is displayed), showlogic (a boolean that controls whether the errors, accuracy, and WPM are displayed), cursorShow (a boolean that controls whether the cursor is shown in the input textarea), timeLimit (which stores the time limit for the test), error (which stores the number of errors), accuracy (which stores the accuracy in percentage), wpm (which stores the words per minute), and characterTyped (which stores the number of characters typed by the user).
 
-In the project directory, you can run:
+## The Test function also contains several helper functions. The Interval function is a setInterval function that decrements the timeLimit variable every second and updates the state of timeLimit. It also resets the state of several other variables when the time limit is reached. The handleButton function selects a random paragraph, enables the input textarea, and sets several state variables to their initial values. The Compare function is called every time the user inputs something into the textarea. It compares the user's input to the original paragraph and calculates the number of errors, accuracy, and WPM based on the user's input.
 
-### `npm start`
+## The Error_Time_Accuracy function is a separate function that renders the errors, accuracy, and WPM. It receives several props from the Test function, including timeLimit, showlogic, error, accuracy, and wpm. It displays these values in separate divs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Overall, this code provides a simple and functional typing test. However, it could be improved in several ways. For example, it could use more advanced algorithms to calculate the WPM and accuracy. It could also provide more options for customizing the test, such as selecting a specific paragraph or adjusting the time limit. Additionally, it could be made more user-friendly by providing better feedback and instructions.
