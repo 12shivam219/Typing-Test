@@ -4,12 +4,12 @@ This is a typing test website that allows you to test your typing speed and accu
 
 # How to use
 
-. Click the start button to begin the test.
-. Type the random paragraph that appears on the screen within 60 seconds.
-. After 60 seconds, the test will automatically stop and calculate your accuracy and WPM.
-. You can then choose to restart the test or share your results.
+## Click the start button to begin the test.
+## Type the random paragraph that appears on the screen within 60 seconds.
+## After 60 seconds, the test will automatically stop and calculate your accuracy and WPM.
+## You can then choose to restart the test or share your results.
 
-#Features
+# Features
 
 Generates a random paragraph for each test.
 Calculates accuracy and WPM.
