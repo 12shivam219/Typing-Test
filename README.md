@@ -1,11 +1,21 @@
-# Typing Test
+# Typing Test Website
 
-## This code is a React component that displays a typing test. The user types a paragraph and the component calculates the number of errors, accuracy, and words per minute (WPM) of the user's typing. The paragraph text is stored in a separate JSON file and a random paragraph is selected each time the user starts a new test. The component uses the useState hook to manage state variables for various aspects of the test, such as the user input, the timer, and the results.
+This is a typing test website that allows you to test your typing speed and accuracy. You will have 60 seconds to type a random paragraph, and the website will calculate your accuracy and words per minute (WPM) at the end of the test.
 
-## The component consists of several parts. The Test function is the main function that renders the component. It contains several state variables, including rand (which stores the index of the current random paragraph), input (which stores the user's input), testarea (a boolean that controls whether the input textarea is disabled or not), showBtn (a boolean that controls whether the Start or Restart button is displayed), showStart (a boolean that controls whether the Start button is displayed), showlogic (a boolean that controls whether the errors, accuracy, and WPM are displayed), cursorShow (a boolean that controls whether the cursor is shown in the input textarea), timeLimit (which stores the time limit for the test), error (which stores the number of errors), accuracy (which stores the accuracy in percentage), wpm (which stores the words per minute), and characterTyped (which stores the number of characters typed by the user).
+# How to use
 
-## The Test function also contains several helper functions. The Interval function is a setInterval function that decrements the timeLimit variable every second and updates the state of timeLimit. It also resets the state of several other variables when the time limit is reached. The handleButton function selects a random paragraph, enables the input textarea, and sets several state variables to their initial values. The Compare function is called every time the user inputs something into the textarea. It compares the user's input to the original paragraph and calculates the number of errors, accuracy, and WPM based on the user's input.
+. Click the start button to begin the test.
+. Type the random paragraph that appears on the screen within 60 seconds.
+. After 60 seconds, the test will automatically stop and calculate your accuracy and WPM.
+. You can then choose to restart the test or share your results.
 
-## The Error_Time_Accuracy function is a separate function that renders the errors, accuracy, and WPM. It receives several props from the Test function, including timeLimit, showlogic, error, accuracy, and wpm. It displays these values in separate divs.
+#Features
 
-## Overall, this code provides a simple and functional typing test. However, it could be improved in several ways. For example, it could use more advanced algorithms to calculate the WPM and accuracy. It could also provide more options for customizing the test, such as selecting a specific paragraph or adjusting the time limit. Additionally, it could be made more user-friendly by providing better feedback and instructions.
+Generates a random paragraph for each test.
+Calculates accuracy and WPM.
+Easy to use and beginner-friendly.
+
+## Technologies used
+
+# Tailwind Css
+# React.js
