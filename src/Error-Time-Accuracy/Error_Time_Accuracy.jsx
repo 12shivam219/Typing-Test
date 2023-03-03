@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function Error_Time_Accuracy({ timeLimit, showlogic }) {
-
-  const [error, setError] = useState(0);
-
-
+export default function Error_Time_Accuracy({ timeLimit, showlogic,error ,accuracy,wpm}) {
 
   return (
     <>
@@ -22,6 +18,7 @@ export default function Error_Time_Accuracy({ timeLimit, showlogic }) {
               </div>
               <div className="accuracy w-[100px] h-[100px] text-center shadow-2xl rounded-xl">
                 <h1 className='text-lg font-extrabold font-mono'>ACCURACY</h1>
+                <span className='flex justify-evenly text-[46px] font-mono'>{accuracy} <span>%</span> </span>
               </div>
             </div>
           </div>
@@ -34,10 +31,11 @@ export default function Error_Time_Accuracy({ timeLimit, showlogic }) {
               </div>
               <div className="errors w-[100px] h-[100px] mx-5 text-center shadow-2xl rounded-xl">
                 <h1 className='text-lg font-extrabold font-mono'>WPM</h1>
-                <span className='text-[46px] font-mono'>50</span>
+                <span className='text-[46px] font-mono'>{wpm}</span>
               </div>
               <div className="accuracy w-[100px] h-[100px] text-center shadow-2xl rounded-xl">
                 <h1 className='text-lg font-extrabold font-mono'>ACCURACY</h1>
+                <span className='flex justify-evenly text-[46px] font-mono'>{accuracy} <span>%</span> </span>
               </div>
             </div>
           </div>
