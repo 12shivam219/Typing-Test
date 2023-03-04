@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Error_Time_Accuracy from '../Error-Time-Accuracy/Error_Time_Accuracy';
+import React, {useState } from 'react'
+import ErrorTimeAccuracy from '../Error-Time-Accuracy';
 import paragraph from '../JSON/paragraph.json'
 
 export default function Test() {
@@ -21,7 +21,7 @@ export default function Test() {
         let x = setInterval(() => {
             timeLimit--;
             setTimeLimit(timeLimit);
-            if (timeLimit == 0) {
+            if (timeLimit === 0) {
                 clearInterval(x)
                 setTimeLimit(60);
                 setHide(true)
@@ -53,7 +53,7 @@ export default function Test() {
         let str2 = input.split(' ');
         let correct = 0;
         str1.forEach((data, index) => {
-            if (data == str2[index]) {
+            if (data === str2[index]) {
                 correct++
             }
         })
@@ -73,7 +73,7 @@ export default function Test() {
                 </div>
             </div>
 
-            <Error_Time_Accuracy timeLimit={timeLimit} showlogic={showlogic} error={error} accuracy={accuracy} wpm={wpm} />
+            <ErrorTimeAccuracy timeLimit={timeLimit} showlogic={showlogic} error={error} accuracy={accuracy} wpm={wpm}/>
 
             <div className="fixPara w-full block">
                 <div className="paraGraph max-w-[50%] shadow-2xl p-4 mt-3 mx-auto text-justify font-mono text-base font-bold">

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-export default function Error_Time_Accuracy({ timeLimit, showlogic,error ,accuracy,wpm}) {
+export default function ErrorTimeAccuracy({ timeLimit, showlogic,error ,accuracy,wpm}) {
 
   return (
     <>
